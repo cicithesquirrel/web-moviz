@@ -14,17 +14,26 @@ class MoviesListContainer extends Component {
     }
 
     componentDidMount() {
-        this.setState({
-            movies: DataProvider.getMovies(this.state.options)
+        let options = this.state.options;
+        let that = this;
+        DataProvider.getMovies(options, function(movies) {
+            that.setState({
+                options: options,
+                movies: movies
+            });
         });
     }
 
     _onFilterChange(filterText) {
         let options = this.state.options;
         options.filter = filterText;
-        this.setState({
-            options: options,
-            movies: DataProvider.getMovies(options)
+
+        let that = this;
+        DataProvider.getMovies(options, function(movies) {
+            that.setState({
+                options: options,
+                movies: movies
+            });
         });
     }
   
