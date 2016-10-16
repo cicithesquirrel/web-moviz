@@ -9,6 +9,9 @@ class MainLayout extends Component {
           <h1><i className="fa fa-film"></i> Welcome to Web Moviz</h1>
         </header>
         {this.props.children}
+        <footer>
+          &copy; Cyril Chéné 2016
+        </footer>
       </div>
     );
   }
