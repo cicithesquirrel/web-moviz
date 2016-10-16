@@ -8,8 +8,10 @@ class MovieListItem extends Component {
     }
   
     render() {
+        let url = '/movie/' + this.props.movie.id;
+
         return (
-            <a href="#" className="MovieListItem list-group-item">
+            <a href={url} className="MovieListItem list-group-item">
                 <div className="list-group-item-heading">
                     {this.props.movie.title}
                 </div>
