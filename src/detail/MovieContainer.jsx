@@ -7,7 +7,8 @@ class MovieContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            movie: {}
+            movie: {},
+            loaded: false
         };
     }
 
@@ -15,14 +16,20 @@ class MovieContainer extends Component {
         let that = this;
         DataProvider.getMovie(this.props.params.id, function(m) {
             that.setState({
-                movie: m
+                movie: m,
+                loaded: true
             });
         });
     }
   
     render() {
+        if (!this.state.loaded) {
+            return <div>Waiting...</div>
+        }
+
         return (
             <div>
+                
                 <ol className="breadcrumb">
                     <li><a href="/">Movies</a></li>
                     <li><a href="#">{this.state.movie.title}</a></li>
