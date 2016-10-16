@@ -9,7 +9,7 @@ class SortList extends Component {
     }
 
     _onChange(e) {
-        // Forward the change event after extracting the filter value
+        // Forward the change event after extracting the sort value
         this.props.onChange(e.target.value);
     }
   
