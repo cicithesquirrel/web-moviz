@@ -3,10 +3,10 @@
     padding-top: 0.5em;
 }
 
-.MovieProperty .label {
+.MovieProperty-label {
     font-weight: bold;
 }
 
-.MovieProperty .value {
+.MovieProperty-value {
     font-style: italic;
 }
