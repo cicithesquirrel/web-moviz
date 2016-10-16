@@ -1,0 +1,12 @@
+.MovieAltTitles {
+    list-style: none;
+    padding-top: 0.5em;
+}
+
+.MovieAltTitles-label {
+    font-weight: bold;
+}
+
+.MovieAltTitles-value {
+    font-style: italic;
+}
