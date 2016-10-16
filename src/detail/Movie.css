@@ -5,16 +5,3 @@
 .Movie ul {
     padding: 0;
 }
-
-.Movie li {
-    list-style: none;
-    padding-top: 0.5em;
-}
-
-.Movie .property {
-    font-weight: bold;
-}
-
-.Movie .value {
-    font-style: italic;
-}

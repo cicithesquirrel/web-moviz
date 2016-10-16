@@ -1,0 +1,12 @@
+.MovieProperty {
+    list-style: none;
+    padding-top: 0.5em;
+}
+
+.MovieProperty .property {
+    font-weight: bold;
+}
+
+.MovieProperty .value {
+    font-style: italic;
+}

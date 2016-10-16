@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import MovieProperty from './MovieProperty';
 import './Movie.css';
 
 class Movie extends Component {
@@ -8,9 +9,9 @@ class Movie extends Component {
             <div className="Movie">
                 <h2>{this.props.movie.title}</h2>
                 <ul>
-                    <li><span className="property">Director(s):</span> <span className="value">{this.props.movie.director}</span></li>
-                    <li><span className="property">Year:</span> <span className="value">{this.props.movie.year}</span></li>
-                    <li><span className="property">Duration (min):</span> <span className="value">{this.props.movie.duration}</span></li>
+                    <MovieProperty label="Director(s):" value={this.props.movie.director} />
+                    <MovieProperty label="Year:" value={this.props.movie.year} />
+                    <MovieProperty label="Duration:" value={this.props.movie.duration} />
                 </ul>
             </div>);
     }
