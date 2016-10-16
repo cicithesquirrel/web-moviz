@@ -2,14 +2,14 @@ import React from 'react';
 import {Router, Route, browserHistory} from 'react-router';
 import MoviesListContainer from './MoviesListContainer';
 import MainLayout from './MainLayout';
-import Movie from './Movie';
+import MovieContainer from './MovieContainer';
 
 const App = () => (
       <div className="App">
         <Router history={browserHistory}>
           <Route component={MainLayout}>
             <Route path="/" component={MoviesListContainer} />
-            <Route path="/movie/:id" component={Movie} />
+            <Route path="/movie/:id" component={MovieContainer} />
           </Route>
         </Router>
       </div>
