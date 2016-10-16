@@ -54,6 +54,9 @@ class MoviesListContainer extends Component {
     render() {
         return (
             <div>
+                <ol className="breadcrumb">
+                    <li><a href="#">Movies</a></li>
+                </ol>
                 <MoviesList 
                     movies={this.state.movies}
                     onFilterChange={this.onFilterChange}

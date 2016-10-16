@@ -22,7 +22,13 @@ class MovieContainer extends Component {
   
     render() {
         return (
-            <Movie movie={this.state.movie} />
+            <div>
+                <ol className="breadcrumb">
+                    <li><a href="/">Movies</a></li>
+                    <li><a href="#">{this.state.movie.title}</a></li>
+                </ol>
+                <Movie movie={this.state.movie} />
+            </div>
         );
     }
 }
