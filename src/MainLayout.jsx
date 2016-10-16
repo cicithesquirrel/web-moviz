@@ -10,7 +10,7 @@ class MainLayout extends Component {
         </header>
         {this.props.children}
         <footer>
-          &copy; Cyril Chéné 2016
+          License: GPL-2.0 (Cyril Chéné, 2016)
         </footer>
       </div>
     );
