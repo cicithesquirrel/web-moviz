@@ -2,16 +2,22 @@
     "movies": [{
         "id": "1",
         "title": "Gone with the wind",
+        "alt-titles": {
+            "fr": "Autant en emporte le vent"
+        },
         "year": 1939,
         "director": "Victor Fleming, George Cukor, Sam Wood",
         "duration": 238
     },
     {
         "id": "2",
-        "title": "The Sound Of Music",
-        "year": 1965,
-        "director": "Robert Wise",
-        "duration": 174
+        "title": "On the Beach",
+        "alt-titles": {
+            "fr": "Le Dernier rivage"
+        },
+        "year": 1959,
+        "director": "Stanley Kramer",
+        "duration": 134
     },
     {
         "id": "3",
@@ -30,6 +36,9 @@
     {
         "id": "5",
         "title": "Bringing Up Baby",
+        "alt-titles": {
+            "fr": "L'Impossible Monsieur Bébé"
+        },
         "year": 1938,
         "director": "Howard Hawks",
         "duration": 102
@@ -37,9 +46,293 @@
     {
         "id": "6",
         "title": "M",
+        "alt-titles": {
+            "fr": "M Le Maudit"
+        },
         "year": 1931,
         "director": "Fritz Lang",
         "duration": 112
+    },
+    {
+        "id": "7",
+        "title": "Birth of a Nation",
+        "alt-titles": {
+            "fr": "La Naissance d'une nation"
+        },
+        "year": 1915,
+        "director": "David W. Griffith",
+        "duration": 150
+    },
+    {
+        "id": "8",
+        "title": "Intolerance",
+        "alt-titles": {
+            "fr": "Intolérance"
+        },
+        "year": 1916,
+        "director": "David W. Griffith",
+        "duration": 180
+    },
+    {
+        "id": "9",
+        "title": "Das Cabinet des Dr. Caligari",
+        "alt-titles": {
+            "fr": "Le Cabinet du docteur Caligari"
+        },
+        "year": 1920,
+        "director": "Robert Wiene",
+        "duration": 77
+    },
+    {
+        "id": "A",
+        "title": "Way Down East",
+        "alt-titles": {
+            "fr": "À travers l'orage"
+        },
+        "year": 1920,
+        "director": "David W. Griffith",
+        "duration": 140
+    },
+    {
+        "id": "B",
+        "title": "Der mude Tod",
+        "alt-titles": {
+            "fr": "Les Trois Lumières"
+        },
+        "year": 1921,
+        "director": "Fritz Lang",
+        "duration": 100
+    },
+    {
+        "id": "C",
+        "title": "Nosferatu, eine Symphonie des Grauens",
+        "alt-titles": {
+            "fr": "Nosferatu le vampire"
+        },
+        "year": 1922,
+        "director": "Friedrich W. Murnau",
+        "duration": 94
+    },
+    {
+        "id": "D",
+        "title": "Aelita",
+        "year": 1924,
+        "director": "Yakov Protazanov",
+        "duration": 111
+    },
+    {
+        "id": "E",
+        "title": "Sunrise: A Song of Two Humans",
+        "alt-titles": {
+            "fr": "L'Aurore"
+        },
+        "year": 1927,
+        "director": "Friedrich W. Murnau",
+        "duration": 97
+    },
+    {
+        "id": "F",
+        "title": "All Quiet on the Western Front",
+        "alt-titles": {
+            "fr": "A l'Ouest, rien de nouveau"
+        },
+        "year": 1930,
+        "director": "Lewis Milestone",
+        "duration": 133
+    },
+    {
+        "id": "G",
+        "title": "Frankenstein",
+        "year": 1931,
+        "director": "James Whale",
+        "duration": 71
+    },
+    {
+        "id": "H",
+        "title": "Island of Lost Souls",
+        "alt-titles": {
+            "fr": "L'Ile du docteur Moreau"
+        },
+        "year": 1932,
+        "director": "Erle C. Kenton",
+        "duration": 72
+    },
+    {
+        "id": "I",
+        "title": "The Thirty Nine Steps",
+        "alt-titles": {
+            "fr": "Les 39 marches"
+        },
+        "year": 1935,
+        "director": "Alfred Hitchcock",
+        "duration": 85
+    },
+    {
+        "id": "J",
+        "title": "Young and Innocent",
+        "alt-titles": {
+            "fr": "Jeune et innocent"
+        },
+        "year": 1937,
+        "director": "Alfred Hitchcock",
+        "duration": 85
+    },
+    {
+        "id": "K",
+        "title": "The Wizard of Oz",
+        "alt-titles": {
+            "fr": "Le Magicien d'Oz"
+        },
+        "year": 1939,
+        "director": "Victor Fleming, King Vidor, George Cukor, Mervyn LeRoy, Norman Taurog",
+        "duration": 101
+    },
+    {
+        "id": "L",
+        "title": "The Grapes of Wrath",
+        "alt-titles": {
+            "fr": "Les Raisins de la colère"
+        },
+        "year": 1940,
+        "director": "John Ford",
+        "duration": 128
+    },
+    {
+        "id": "M",
+        "title": "The Shop Around the Corner",
+        "alt-titles": {
+            "fr": "Rendez-vous"
+        },
+        "year": 1940,
+        "director": "Ernst Lubitsch",
+        "duration": 97
+    },
+    {
+        "id": "N",
+        "title": "Suspicion",
+        "alt-titles": {
+            "fr": "Soupçons"
+        },
+        "year": 1941,
+        "director": "Alfred Hitchcock",
+        "duration": 99
+    },
+    {
+        "id": "O",
+        "title": "Citizen Kane",
+        "year": 1941,
+        "director": "Orson Welles",
+        "duration": 119
+    },
+    {
+        "id": "P",
+        "title": "Cat People",
+        "alt-titles": {
+            "fr": "La Féline"
+        },
+        "year": 1942,
+        "director": "Jacques Tourneur",
+        "duration": 71
+    },
+    {
+        "id": "Q",
+        "title": "Arsenic and Old Lace",
+        "alt-titles": {
+            "fr": "Arsenic et Vieilles Dentelles"
+        },
+        "year": 1944,
+        "director": "Frank Capra",
+        "duration": 118
+    },
+    {
+        "id": "R",
+        "title": "The Thing from Another World",
+        "alt-titles": {
+            "fr": "La Chose d'un autre monde"
+        },
+        "year": 1951,
+        "director": "Christian Niby, Howard Hawks",
+        "duration": 87
+    },
+    {
+        "id": "S",
+        "title": "The Creature from the Black Lagoon",
+        "alt-titles": {
+            "fr": "L'Etrange créature du lac noir"
+        },
+        "year": 1954,
+        "director": "Jack Arnold",
+        "duration": 80
+    },
+    {
+        "id": "T",
+        "title": "Gojira",
+        "alt-titles": {
+            "fr": "Godzilla"
+        },
+        "year": 1954,
+        "director": "Ishirô Honda",
+        "duration": 98
+    },
+    {
+        "id": "U",
+        "title": "This Island Earth",
+        "alt-titles": {
+            "fr": "Les Survivants de l'infini"
+        },
+        "year": 1955,
+        "director": "Joseph M. Newman, Jack Arnold",
+        "duration": 87
+    },
+    {
+        "id": "V",
+        "title": "The Quatermass experiment",
+        "alt-titles": {
+            "fr": "Le Monstre"
+        },
+        "year": 1955,
+        "director": "Val Guest",
+        "duration": 82
+    },
+    {
+        "id": "W",
+        "title": "Earth vs. the Flying Saucers",
+        "alt-titles": {
+            "fr": "Les Soucoupes volantes attaquent"
+        },
+        "year": 1956,
+        "director": "Fred F. Sears",
+        "duration": 83
+    },
+    {
+        "id": "X",
+        "title": "Forbidden Planet",
+        "alt-titles": {
+            "fr": "Planète interdite"
+        },
+        "year": 1957,
+        "director": "Fred M. Wilcox",
+        "duration": 98
+    },
+    {
+        "id": "Y",
+        "title": "Twelve Angry Men",
+        "alt-titles": {
+            "fr": "12 hommes en colère"
+        },
+        "year": 1957,
+        "director": "Sidney Lumet",
+        "duration": 95
+    },
+    {
+        "id": "Z",
+        "title": "Plan 9 from Outer Space",
+        "alt-titles": {
+            "fr": "Plan 9"
+        },
+        "year": 1958,
+        "director": "Ed Wood",
+        "duration": 79
     }
   ]
 }
