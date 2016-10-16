@@ -8,9 +8,10 @@ class MoviesListContainer extends Component {
         super(props);
         this.state = {
             movies: [],
-            options: {filter: '', sort: undefined}
+            options: {filter: '', sort: 'title'}
         };
         this.onFilterChange = this._onFilterChange.bind(this)
+        this.onSortChange = this._onSortChange.bind(this)
     }
 
     componentDidMount() {
@@ -36,11 +37,27 @@ class MoviesListContainer extends Component {
             });
         });
     }
+
+    _onSortChange(sortValue) {
+        let options = this.state.options;
+        options.sort = sortValue;
+
+        let that = this;
+        DataProvider.getMovies(options, function(movies) {
+            that.setState({
+                options: options,
+                movies: movies
+            });
+        });
+    }
   
     render() {
         return (
             <div>
-                <MoviesList movies={this.state.movies} onFilterChange={this.onFilterChange}/>
+                <MoviesList 
+                    movies={this.state.movies}
+                    onFilterChange={this.onFilterChange}
+                    onSortChange={this.onSortChange}/>
             </div>
         );
     }
