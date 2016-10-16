@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import MoviesList from './MoviesList';
-import DataProvider from './DataProvider';
+import DataProvider from '../data/DataProvider';
 
 class MoviesListContainer extends Component {
 

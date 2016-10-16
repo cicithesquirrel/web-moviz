@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import DataProvider from './DataProvider';
+import DataProvider from '../data/DataProvider';
 import Movie from './Movie';
 
 class MovieContainer extends Component {
