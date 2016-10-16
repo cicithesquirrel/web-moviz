@@ -6,6 +6,10 @@ This project is based on [React](https://facebook.github.io/react/), just to dis
 
 It was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+![Movies list](/screen1.png)
+
+![Movie details](/screen2.png)
+
 ## Installation & use
 
 ```
