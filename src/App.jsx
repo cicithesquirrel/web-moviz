@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
-//import MoviesTable from './MoviesTable';
+import React from 'react';
+import {Router, Route, browserHistory} from 'react-router';
 import MoviesListContainer from './MoviesListContainer';
+import MainLayout from './MainLayout';
+import Movie from './Movie';
 
-
-
-class App extends Component {
-  render() {
-    return (
+const App = () => (
       <div className="App">
-        <div className="App-header">
-          <h1><i className="fa fa-film"></i> Welcome to Web Moviz</h1>
-        </div>
-        <MoviesListContainer />
+        <Router history={browserHistory}>
+          <Route component={MainLayout}>
+            <Route path="/" component={MoviesListContainer} />
+            <Route path="/movie/:id" component={Movie} />
+          </Route>
+        </Router>
       </div>
     );
-  }
-}
 
 export default App;
