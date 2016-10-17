@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import './MovieListItem.css';
 
 class MovieListItem extends Component {
-    constructor(props) {
-        super();
-        this.props = props;
-    }
   
     render() {
         let url = '/movie/' + this.props.movie.id;
