@@ -27,6 +27,7 @@ const DataProvider = {
             movies = movies.filter((m) => (
               m.title.indexOf(options.filter) >= 0
               || m.director.indexOf(options.filter) >= 0
+              || m.country.indexOf(options.filter) >= 0
               || m.year.toString().indexOf(options.filter) >= 0)
             );
           }
