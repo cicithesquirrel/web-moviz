@@ -368,6 +368,291 @@
         "director": "Ed Wood",
         "duration": 79,
         "country": "us"
+    },
+    {
+        "id": "10",
+        "title": "Le Voyage dans la Lune",
+        "year": 1902,
+        "director": "Georges Méliès",
+        "duration": 16,
+        "country": "fr"
+    },
+    {
+        "id": "11",
+        "title": "J'accuse",
+        "year": 1919,
+        "director": "Abel Gance",
+        "duration": 166,
+        "country": "fr"
+    },
+    {
+        "id": "12",
+        "title": "The Scarecrow",
+        "alt-titles": {
+            "fr": "Les ruses de Malec"
+        },
+        "year": 1920,
+        "director": "Buster Keaton, Edward F. Cline",
+        "duration": 19,
+        "country": "us"
+    },
+    {
+        "id": "13",
+        "title": "The Goat",
+        "alt-titles": {
+            "fr": "Le crime de Malec"
+        },
+        "year": 1921,
+        "director": "Buster Keaton",
+        "duration": 25,
+        "country": "us"
+    },
+    {
+        "id": "14",
+        "title": "The Paleface",
+        "alt-titles": {
+            "fr": "Malec chez les indiens"
+        },
+        "year": 1921,
+        "director": "Buster Keaton",
+        "duration": 20,
+        "country": "us"
+    },
+    {
+        "id": "15",
+        "title": "Die Nibelungen 1.Teil: Siegfrieds Kampf mit dem Drachen",
+        "alt-titles": {
+            "fr": "Les Nibelungen, 1ère partie : la mort de Siegfried"
+        },
+        "year": 1924,
+        "director": "Fritz Lang",
+        "duration": 143,
+        "country": "de"
+    },
+    {
+        "id": "16",
+        "title": "Die Nibelungen 2.Teil: Kriemhilds Rache",
+        "alt-titles": {
+            "fr": "Les Nibelungen, 2ème partie : la vengeance de Kriemhild"
+        },
+        "year": 1924,
+        "director": "Fritz Lang",
+        "duration": 129,
+        "country": "de"
+    },
+    {
+        "id": "17",
+        "title": "Die Abenteuer des Prinzen Achmed",
+        "alt-titles": {
+            "fr": "Les Aventures du prince Ahmed"
+        },
+        "year": 1926,
+        "director": "Lotte Reiniger, Carl Koch",
+        "duration": 65,
+        "country": "de"
+    },
+    {
+        "id": "18",
+        "title": "The General",
+        "alt-titles": {
+            "fr": "Le Mécano de la Générale"
+        },
+        "year": 1926,
+        "director": "Buster Keaton",
+        "duration": 89,
+        "country": "us"
+    },
+    {
+        "id": "19",
+        "title": "City girl",
+        "alt-titles": {
+            "fr": "L'Intruse"
+        },
+        "year": 1929,
+        "director": "Friedrich W. Murnau",
+        "duration": 77,
+        "country": "us"
+    },
+    {
+        "id": "1A",
+        "title": "A Farewell to Arms",
+        "alt-titles": {
+            "fr": "L'Adieu aux armes"
+        },
+        "year": 1932,
+        "director": "Frank Borzage",
+        "duration": 80,
+        "country": "us"
+    },
+    {
+        "id": "1B",
+        "title": "The Invisible Man",
+        "alt-titles": {
+            "fr": "L'Homme invisible"
+        },
+        "year": 1933,
+        "director": "James Whale",
+        "duration": 71,
+        "country": "us"
+    },
+    {
+        "id": "1C",
+        "title": "The Bride of Frankenstein",
+        "alt-titles": {
+            "fr": "La Fiancée de Frankenstein"
+        },
+        "year": 1935,
+        "director": "James Whale",
+        "duration": 75,
+        "country": "us"
+    },
+    {
+        "id": "1D",
+        "title": "The Secret Agent",
+        "alt-titles": {
+            "fr": "Quatre de l'espionnage"
+        },
+        "year": 1936,
+        "director": "Alfred Hitchcock",
+        "duration": 83,
+        "country": "gb"
+    },
+    {
+        "id": "1E",
+        "title": "Sabotage",
+        "alt-titles": {
+            "fr": "Agent secret"
+        },
+        "year": 1936,
+        "director": "Alfred Hitchcock",
+        "duration": 76,
+        "country": "us"
+    },
+    {
+        "id": "1F",
+        "title": "The Lady Vanishes",
+        "alt-titles": {
+            "fr": "Une femme disparaît"
+        },
+        "year": 1938,
+        "director": "Alfred Hitchcock",
+        "duration": 95,
+        "country": "us"
+    },
+    {
+        "id": "1G",
+        "title": "Hangmen Also Die!",
+        "alt-titles": {
+            "fr": "Les Bourreaux meurent aussi"
+        },
+        "year": 1943,
+        "director": "Fritz Lang",
+        "duration": 134,
+        "country": "us"
+    },
+    {
+        "id": "1H",
+        "title": "The Body Snatcher",
+        "alt-titles": {
+            "fr": "Le Récuperateur de cadavres"
+        },
+        "year": 1945,
+        "director": "Robert Wise",
+        "duration": 78,
+        "country": "us"
+    },
+    {
+        "id": "1I",
+        "title": "Strangers on a Train",
+        "alt-titles": {
+            "fr": "L'Inconnu du Nord-Express"
+        },
+        "year": 1951,
+        "director": "Alfred Hitchcock",
+        "duration": 100,
+        "country": "us"
+    },
+    {
+        "id": "1J",
+        "title": "Jeux interdits",
+        "year": 1952,
+        "director": "René Clément",
+        "duration": 85,
+        "country": "fr"
+    },
+    {
+        "id": "1K",
+        "title": "The Beast from 20,000 Fathoms",
+        "alt-titles": {
+            "fr": "Le Monstre des temps perdus"
+        },
+        "year": 1953,
+        "director": "Eugène Lourié",
+        "duration": 80,
+        "country": "us"
+    },
+    {
+        "id": "1L",
+        "title": "The Magnetic Monster",
+        "alt-titles": {
+            "fr": "Le monstre magnétique"
+        },
+        "year": 1953,
+        "director": "Curt Siodmak, Herbert L. Strock",
+        "duration": 76,
+        "country": "us"
+    },
+    {
+        "id": "1M",
+        "title": "Them!",
+        "alt-titles": {
+            "fr": "Des monstres attaquent la ville"
+        },
+        "year": 1954,
+        "director": "Gordon Douglas",
+        "duration": 93,
+        "country": "us"
+    },
+    {
+        "id": "1N",
+        "title": "Riot in Cell Block 11",
+        "alt-titles": {
+            "fr": "Les Révoltés de la cellule 11"
+        },
+        "year": 1954,
+        "director": "Don Siegel",
+        "duration": 80,
+        "country": "us"
+    },
+    {
+        "id": "1O",
+        "title": "Dial M. for Murder",
+        "alt-titles": {
+            "fr": "Le Crime était presque parfait"
+        },
+        "year": 1954,
+        "director": "Alfred Hitchcock",
+        "duration": 105,
+        "country": "us"
+    },
+    {
+        "id": "1P",
+        "title": "Tarantula",
+        "year": 1955,
+        "director": "Jack Arnold",
+        "duration": 80,
+        "country": "us"
+    },
+    {
+        "id": "1Q",
+        "title": "Quatermass 2",
+        "alt-titles": {
+            "fr": "La Marque"
+        },
+        "year": 1957,
+        "director": "Val Guest",
+        "duration": 85,
+        "country": "gb"
     }
   ]
 }
