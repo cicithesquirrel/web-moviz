@@ -9,6 +9,7 @@ class MoviesListContainer extends Component {
 
         let query = this.props.location.query;
         this.state = {
+            loaded: false,
             movies: [],
             options: {filter: (query.f || ''), sort: (query.s || 'title')}
         };
@@ -21,6 +22,7 @@ class MoviesListContainer extends Component {
         let that = this;
         DataProvider.getMovies(options, function(movies) {
             that.setState({
+                loaded: true,
                 options: options,
                 movies: movies
             });
@@ -54,6 +56,10 @@ class MoviesListContainer extends Component {
     }
   
     render() {
+        if (!this.state.loaded) {
+            return <div>Waiting...</div>
+        }
+
         return (
             <div>
                 <ol className="breadcrumb">
