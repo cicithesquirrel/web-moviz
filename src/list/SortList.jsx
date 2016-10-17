@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 
 class SortList extends Component {
     constructor(props) {
-        super();
-        this.props = props;
+        super(props);
         // We need binding to be able to use 'this' in the callback
         this.onChange = this._onChange.bind(this)
     }
