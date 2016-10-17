@@ -10,7 +10,8 @@ class MainLayout extends Component {
         </header>
         {this.props.children}
         <footer>
-          License: GPL-2.0 (Cyril Chéné, 2016)
+          License: GPL-2.0 (Cyril Chéné, 2016)<br/>
+          Icons: <a href="http://fontawesome.io/">FontAwesome</a> <a href="http://famfamfam.com/">FamFamFam</a>
         </footer>
       </div>
     );
