@@ -9,6 +9,7 @@ class MovieListItem extends Component {
   
     render() {
         let url = '/movie/' + this.props.movie.id;
+        let countryFlagUrl = '/flags/' + this.props.movie.country + '.png';
 
         return (
             <a href={url} className="MovieListItem list-group-item">
@@ -16,7 +17,7 @@ class MovieListItem extends Component {
                     {this.props.movie.title}
                 </div>
                 <p className="list-group-item-text">
-                    {this.props.movie.director} ({this.props.movie.year})
+                    {this.props.movie.director} (<img src={countryFlagUrl} alt={this.props.movie.country} /> {this.props.movie.year})
                 </p>
             </a>);
     }
