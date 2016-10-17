@@ -7,7 +7,7 @@ class Movie extends Component {
   
     render() {
         let movie = this.props.movie;
-        let country = <img src={'/flags/' + movie.country + '.png'} alt={movie.country}/>;
+        let country = <img src={'/flags/' + movie.country + '.png'} alt={movie.country} title={this.props.movie.country}/>;
         return (
             <div className="Movie">
                 <h2>{movie.title}</h2>

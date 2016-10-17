@@ -6,7 +6,7 @@ const MovieAltTitles = ({titles}) => (
         <ul className="MovieAltTitles">
             {Object.keys(titles).sort().map((key) => (
                 <li>
-                    <span className="MovieAltTitles-label"><img src={'/flags/' + key + '.png'} alt={key}/> </span>
+                    <span className="MovieAltTitles-label"><img src={'/flags/' + key + '.png'} alt={key} title={key}/> </span>
                     <span className="MovieAltTitles-value">{titles[key]}</span>
                 </li>
             ))}
