@@ -62,14 +62,13 @@ const DataProvider = {
       this.getMovies({}, function(movies) {
 
         let countByCountry = {};
-        movies.map(function (m) {
+        movies.forEach(function (m) {
           if (countByCountry[m.country]) {
             countByCountry[m.country] += 1;
           }
           else {
             countByCountry[m.country] = 1;
           }
-          return undefined;
         });
 
         callback(countByCountry);
