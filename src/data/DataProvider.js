@@ -56,6 +56,24 @@ const DataProvider = {
         }
         // TODO handle unknown movie ID
       });
+    },
+
+    getStats: function(callback) {
+      this.getMovies({}, function(movies) {
+
+        let countByCountry = {};
+        movies.map(function (m) {
+          if (countByCountry[m.country]) {
+            countByCountry[m.country] += 1;
+          }
+          else {
+            countByCountry[m.country] = 1;
+          }
+          return undefined;
+        });
+
+        callback(countByCountry);
+      });
     }
 };
 
