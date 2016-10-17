@@ -7,7 +7,8 @@
         },
         "year": 1939,
         "director": "Victor Fleming, George Cukor, Sam Wood",
-        "duration": 238
+        "duration": 238,
+        "country": "us"
     },
     {
         "id": "2",
@@ -17,21 +18,24 @@
         },
         "year": 1959,
         "director": "Stanley Kramer",
-        "duration": 134
+        "duration": 134,
+        "country": "us"
     },
     {
         "id": "3",
         "title": "Metropolis",
         "year": 1927,
         "director": "Fritz Lang",
-        "duration": 153
+        "duration": 153,
+        "country": "de"
     },
     {
         "id": "4",
         "title": "King Kong",
         "year": 1933,
         "director": "Ernest B. Schoedsack, Merian C. Cooper",
-        "duration": 100
+        "duration": 100,
+        "country": "us"
     },
     {
         "id": "5",
@@ -41,7 +45,8 @@
         },
         "year": 1938,
         "director": "Howard Hawks",
-        "duration": 102
+        "duration": 102,
+        "country": "us"
     },
     {
         "id": "6",
@@ -51,7 +56,8 @@
         },
         "year": 1931,
         "director": "Fritz Lang",
-        "duration": 112
+        "duration": 112,
+        "country": "de"
     },
     {
         "id": "7",
@@ -61,7 +67,8 @@
         },
         "year": 1915,
         "director": "David W. Griffith",
-        "duration": 150
+        "duration": 150,
+        "country": "us"
     },
     {
         "id": "8",
@@ -71,7 +78,8 @@
         },
         "year": 1916,
         "director": "David W. Griffith",
-        "duration": 180
+        "duration": 180,
+        "country": "us"
     },
     {
         "id": "9",
@@ -81,7 +89,8 @@
         },
         "year": 1920,
         "director": "Robert Wiene",
-        "duration": 77
+        "duration": 77,
+        "country": "de"
     },
     {
         "id": "A",
@@ -91,7 +100,8 @@
         },
         "year": 1920,
         "director": "David W. Griffith",
-        "duration": 140
+        "duration": 140,
+        "country": "us"
     },
     {
         "id": "B",
@@ -101,7 +111,8 @@
         },
         "year": 1921,
         "director": "Fritz Lang",
-        "duration": 100
+        "duration": 100,
+        "country": "de"
     },
     {
         "id": "C",
@@ -111,14 +122,16 @@
         },
         "year": 1922,
         "director": "Friedrich W. Murnau",
-        "duration": 94
+        "duration": 94,
+        "country": "de"
     },
     {
         "id": "D",
         "title": "Aelita",
         "year": 1924,
         "director": "Yakov Protazanov",
-        "duration": 111
+        "duration": 111,
+        "country": "ru"
     },
     {
         "id": "E",
@@ -128,7 +141,8 @@
         },
         "year": 1927,
         "director": "Friedrich W. Murnau",
-        "duration": 97
+        "duration": 97,
+        "country": "us"
     },
     {
         "id": "F",
@@ -138,14 +152,16 @@
         },
         "year": 1930,
         "director": "Lewis Milestone",
-        "duration": 133
+        "duration": 133,
+        "country": "us"
     },
     {
         "id": "G",
         "title": "Frankenstein",
         "year": 1931,
         "director": "James Whale",
-        "duration": 71
+        "duration": 71,
+        "country": "us"
     },
     {
         "id": "H",
@@ -155,7 +171,8 @@
         },
         "year": 1932,
         "director": "Erle C. Kenton",
-        "duration": 72
+        "duration": 72,
+        "country": "us"
     },
     {
         "id": "I",
@@ -165,7 +182,8 @@
         },
         "year": 1935,
         "director": "Alfred Hitchcock",
-        "duration": 85
+        "duration": 85,
+        "country": "uk"
     },
     {
         "id": "J",
@@ -175,7 +193,8 @@
         },
         "year": 1937,
         "director": "Alfred Hitchcock",
-        "duration": 85
+        "duration": 85,
+        "country": "uk"
     },
     {
         "id": "K",
@@ -185,7 +204,8 @@
         },
         "year": 1939,
         "director": "Victor Fleming, King Vidor, George Cukor, Mervyn LeRoy, Norman Taurog",
-        "duration": 101
+        "duration": 101,
+        "country": "us"
     },
     {
         "id": "L",
@@ -195,7 +215,8 @@
         },
         "year": 1940,
         "director": "John Ford",
-        "duration": 128
+        "duration": 128,
+        "country": "us"
     },
     {
         "id": "M",
@@ -205,7 +226,8 @@
         },
         "year": 1940,
         "director": "Ernst Lubitsch",
-        "duration": 97
+        "duration": 97,
+        "country": "us"
     },
     {
         "id": "N",
@@ -215,14 +237,16 @@
         },
         "year": 1941,
         "director": "Alfred Hitchcock",
-        "duration": 99
+        "duration": 99,
+        "country": "us"
     },
     {
         "id": "O",
         "title": "Citizen Kane",
         "year": 1941,
         "director": "Orson Welles",
-        "duration": 119
+        "duration": 119,
+        "country": "us"
     },
     {
         "id": "P",
@@ -232,7 +256,8 @@
         },
         "year": 1942,
         "director": "Jacques Tourneur",
-        "duration": 71
+        "duration": 71,
+        "country": "us"
     },
     {
         "id": "Q",
@@ -242,7 +267,8 @@
         },
         "year": 1944,
         "director": "Frank Capra",
-        "duration": 118
+        "duration": 118,
+        "country": "us"
     },
     {
         "id": "R",
@@ -252,7 +278,8 @@
         },
         "year": 1951,
         "director": "Christian Niby, Howard Hawks",
-        "duration": 87
+        "duration": 87,
+        "country": "us"
     },
     {
         "id": "S",
@@ -262,7 +289,8 @@
         },
         "year": 1954,
         "director": "Jack Arnold",
-        "duration": 80
+        "duration": 80,
+        "country": "us"
     },
     {
         "id": "T",
@@ -272,7 +300,8 @@
         },
         "year": 1954,
         "director": "Ishirô Honda",
-        "duration": 98
+        "duration": 98,
+        "country": "jp"
     },
     {
         "id": "U",
@@ -282,7 +311,8 @@
         },
         "year": 1955,
         "director": "Joseph M. Newman, Jack Arnold",
-        "duration": 87
+        "duration": 87,
+        "country": "us"
     },
     {
         "id": "V",
@@ -292,7 +322,8 @@
         },
         "year": 1955,
         "director": "Val Guest",
-        "duration": 82
+        "duration": 82,
+        "country": "uk"
     },
     {
         "id": "W",
@@ -302,7 +333,8 @@
         },
         "year": 1956,
         "director": "Fred F. Sears",
-        "duration": 83
+        "duration": 83,
+        "country": "us"
     },
     {
         "id": "X",
@@ -312,7 +344,8 @@
         },
         "year": 1957,
         "director": "Fred M. Wilcox",
-        "duration": 98
+        "duration": 98,
+        "country": "us"
     },
     {
         "id": "Y",
@@ -322,7 +355,8 @@
         },
         "year": 1957,
         "director": "Sidney Lumet",
-        "duration": 95
+        "duration": 95,
+        "country": "us"
     },
     {
         "id": "Z",
@@ -332,7 +366,8 @@
         },
         "year": 1958,
         "director": "Ed Wood",
-        "duration": 79
+        "duration": 79,
+        "country": "us"
     }
   ]
 }
