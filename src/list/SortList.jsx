@@ -16,7 +16,7 @@ class SortList extends Component {
         return (
             <div className="form-group">
                 <label htmlFor={this.props.id}>{(this.props.label?this.props.label:'Filter:')}</label>
-                <select onChange={this.onChange} className="form-control" id={this.props.id}>
+                <select onChange={this.onChange} className="form-control" id={this.props.id} value={this.props.value}>
                     <option value="title">Title</option>
                     <option value="year">Year</option>
                 </select>

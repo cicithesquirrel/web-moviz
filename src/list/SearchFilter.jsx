@@ -16,7 +16,7 @@ class SearchFilter extends Component {
         return (
             <div className="form-group">
                 <label htmlFor={this.props.id}>{(this.props.label?this.props.label:'Filter:')}</label>
-                <input onChange={this.onChange} type="text" className="form-control" id={this.props.id} placeholder={this.props.placeholder} />
+                <input onChange={this.onChange} type="text" className="form-control" id={this.props.id} placeholder={this.props.placeholder} value={this.props.value} />
             </div>
         );
     }

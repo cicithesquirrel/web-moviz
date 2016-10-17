@@ -4,11 +4,11 @@ import './MoviesList.css';
 import SearchFilter from './SearchFilter';
 import SortList from './SortList';
 
-const MoviesList = ({onFilterChange, onSortChange, movies}) => (
+const MoviesList = ({onFilterChange, onSortChange, movies, sort, filter}) => (
     <div className="MoviesList">
         <div id="options" className="form-group form-inline">
-            <SearchFilter onChange={onFilterChange} id="search-filter" label="Filter:" placeholder="Enter text filter..."/>
-            <SortList onChange={onSortChange} id="sort-option" label="Sort:" />
+            <SearchFilter onChange={onFilterChange} id="search-filter" label="Filter:" placeholder="Enter text filter..." value={filter}/>
+            <SortList onChange={onSortChange} id="sort-option" label="Sort:"  value={sort}/>
         </div>
         <div className="list-group">
             {movies.map((m) => (<MovieListItem key={m.id} movie={m} />))}

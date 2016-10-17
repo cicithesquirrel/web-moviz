@@ -6,9 +6,11 @@ class MoviesListContainer extends Component {
 
     constructor(props) {
         super(props);
+
+        let query = this.props.location.query;
         this.state = {
             movies: [],
-            options: {filter: '', sort: 'title'}
+            options: {filter: (query.f || ''), sort: (query.s || 'title')}
         };
         this.onFilterChange = this._onFilterChange.bind(this)
         this.onSortChange = this._onSortChange.bind(this)
@@ -59,6 +61,8 @@ class MoviesListContainer extends Component {
                 </ol>
                 <MoviesList 
                     movies={this.state.movies}
+                    filter={this.state.options.filter}
+                    sort={this.state.options.sort}
                     onFilterChange={this.onFilterChange}
                     onSortChange={this.onSortChange}/>
             </div>
