@@ -13,7 +13,11 @@ class MovieListItem extends Component {
                     {this.props.movie.title}
                 </div>
                 <p className="list-group-item-text">
-                    {this.props.movie.director} (<img src={countryFlagUrl} alt={this.props.movie.country} title={this.props.movie.country}/> {this.props.movie.year})
+                    {this.props.movie.director}
+                </p>
+                <p className="list-group-item-text">
+                    <img src={countryFlagUrl} alt={this.props.movie.country} title={this.props.movie.country}/>
+                    {this.props.movie.year}
                 </p>
             </a>);
     }
