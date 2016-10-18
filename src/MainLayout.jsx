@@ -11,7 +11,8 @@ class MainLayout extends Component {
         {this.props.children}
         <footer>
           License: GPL-2.0 (Cyril Chéné, 2016)<br/>
-          Icons: <a href="http://fontawesome.io/">FontAwesome</a> <a href="http://famfamfam.com/">FamFamFam</a>
+          Icons: <a href="http://fontawesome.io/">FontAwesome</a> & <a href="http://famfamfam.com/">FamFamFam</a><br/>
+          Charts: <a href="http://www.chartjs.org/">Chart.js</a>
         </footer>
       </div>
     );
