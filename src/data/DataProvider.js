@@ -7,7 +7,7 @@ const DataProvider = {
       if (options.filter || options.sort) {
         queryString += '?';
         if (options.filter) {
-          queryString += 'f=' + options.filter;
+          queryString += 'f=' + encodeURIComponent(options.filter);
         }
         if (options.sort) {
           if (options.filter) {
