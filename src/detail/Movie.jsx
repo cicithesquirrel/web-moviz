@@ -15,9 +15,9 @@ class Movie extends Component {
                 <section>
                     <h3>Details</h3>
                     <ul>
-                        <MovieProperty label="Director(s):" value={movie.director} />
-                        <MovieProperty label="Country:" value={country} />
-                        <MovieProperty label="Year:" value={movie.year} />
+                        <MovieProperty label="Director(s):" value={movie.director} linkValue={movie.director} />
+                        <MovieProperty label="Country:" value={country} linkValue={movie.country} />
+                        <MovieProperty label="Year:" value={movie.year} linkValue={movie.year} />
                         <MovieProperty label="Duration:" value={movie.duration} />
                     </ul>
                 </section>
