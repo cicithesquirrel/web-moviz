@@ -3,6 +3,7 @@ import DataProvider from '../data/DataProvider';
 import Breadcrumb from '../Breadcrumb';
 import Movie from './Movie';
 import PleaseWait from '../PleaseWait';
+import "../Generic.css";
 
 class MovieContainer extends Component {
 
@@ -27,6 +28,14 @@ class MovieContainer extends Component {
     render() {
         if (!this.state.loaded) {
             return <PleaseWait />;
+        }
+
+        if (!this.state.movie) {
+            return (<div className="Generic-message">
+                    <i className="fa fa-frown-o"></i>&nbsp;
+                    Oops! Sorry, we could not find this movie...
+                    <p className="Generic-mini-message">Please try again by clicking <a href="/">here</a>!</p>
+                </div>);
         }
 
         return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import "./PleaseWait.css";
+import "./Generic.css";
 
 const PleaseWait = ({crumbs}) => (
-    <div id="wait"><i className="fa fa-spinner fa-pulse fa-fw"></i> Please wait...</div>
+    <div className="Generic-message"><i className="fa fa-spinner fa-pulse fa-fw"></i> Please wait...</div>
 );
 
 export default PleaseWait;

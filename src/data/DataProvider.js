@@ -54,7 +54,9 @@ const DataProvider = {
         if (movie.length === 1) {
           callback(movie[0]);
         }
-        // TODO handle unknown movie ID
+        else {
+          callback(undefined);
+        }
       });
     },
 

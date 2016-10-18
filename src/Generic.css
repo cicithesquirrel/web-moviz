@@ -1,7 +1,11 @@
-#wait {
+.Generic-message {
     text-align: center;
     font-size: x-large;
     font-style: italic;
     color:  #666;
     margin: 1em 0;
+}
+
+.Generic-mini-message {
+    font-size: initial;
 }
