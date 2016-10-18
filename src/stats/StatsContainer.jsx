@@ -44,10 +44,16 @@ class StatsContainer extends Component {
         };
 
         return (
-            <section>
-                <h2>Number of movies by country</h2>
-                <Doughnut data={data} />
-            </section>
+            <div>
+                <ol className="breadcrumb">
+                    <li><a href="/">Movies</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ol>
+                <section>
+                    <h2>Number of movies by country</h2>
+                    <Doughnut data={data} />
+                </section>
+            </div>
         );
     }
 }

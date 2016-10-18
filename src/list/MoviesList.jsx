@@ -13,6 +13,7 @@ const MoviesList = ({onFilterChange, onSortChange, movies, sort, filter}) => (
         <div className="list-group">
             {movies.map((m) => (<MovieListItem key={m.id} movie={m} />))}
         </div>
+        <a href="/stats">See stats</a>
     </div>
 );
 
