@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DataProvider from '../data/DataProvider';
+import Breadcrumb from '../Breadcrumb';
 import {Doughnut} from 'react-chartjs-2';
 
 const backgroundColors = ['#5DA5DA', '#FAA43A', '#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854', '#4D4D4D'];
@@ -45,10 +46,7 @@ class StatsContainer extends Component {
 
         return (
             <div>
-                <ol className="breadcrumb">
-                    <li><a href="/">Movies</a></li>
-                    <li><a href="#">Stats</a></li>
-                </ol>
+                <Breadcrumb crumbs={[{label:'Movies',link:'/'}, {label:'Stats'}]} />
                 <section>
                     <h2>Number of movies by country</h2>
                     <Doughnut data={data} />

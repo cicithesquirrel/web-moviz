@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DataProvider from '../data/DataProvider';
+import Breadcrumb from '../Breadcrumb';
 import Movie from './Movie';
 
 class MovieContainer extends Component {
@@ -29,11 +30,7 @@ class MovieContainer extends Component {
 
         return (
             <div>
-                
-                <ol className="breadcrumb">
-                    <li><a href="/">Movies</a></li>
-                    <li><a href="#">{this.state.movie.title}</a></li>
-                </ol>
+                <Breadcrumb crumbs={[{label:'Movies',link:'/'}, {label:this.state.movie.title}]} />
                 <Movie movie={this.state.movie} />
             </div>
         );
