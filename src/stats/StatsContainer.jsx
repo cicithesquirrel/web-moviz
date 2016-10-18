@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import DataProvider from '../data/DataProvider';
 import Breadcrumb from '../Breadcrumb';
+import PleaseWait from '../PleaseWait';
 import {Doughnut} from 'react-chartjs-2';
 
 const backgroundColors = ['#5DA5DA', '#FAA43A', '#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854', '#4D4D4D'];
@@ -29,7 +30,7 @@ class StatsContainer extends Component {
   
     render() {
         if (!this.state.loaded) {
-            return <div>Waiting...</div>
+            return <PleaseWait />;
         }
 
         let countByCountry = this.state.countByCountry;

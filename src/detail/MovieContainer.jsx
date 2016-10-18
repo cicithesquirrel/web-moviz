@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import DataProvider from '../data/DataProvider';
 import Breadcrumb from '../Breadcrumb';
 import Movie from './Movie';
+import PleaseWait from '../PleaseWait';
 
 class MovieContainer extends Component {
 
@@ -25,7 +26,7 @@ class MovieContainer extends Component {
   
     render() {
         if (!this.state.loaded) {
-            return <div>Waiting...</div>
+            return <PleaseWait />;
         }
 
         return (
