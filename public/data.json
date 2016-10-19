@@ -13,7 +13,8 @@
         "year": 1939,
         "director": "Victor Fleming, George Cukor, Sam Wood",
         "duration": 238,
-        "country": "us"
+        "country": "us",
+		"imdb-ref": "tt0031381"
     },
     {
         "id": "2",
@@ -24,7 +25,8 @@
         "year": 1959,
         "director": "Stanley Kramer",
         "duration": 134,
-        "country": "us"
+        "country": "us",
+		"imdb-ref": "tt0053137"
     },
     {
         "id": "3",
@@ -32,7 +34,8 @@
         "year": 1927,
         "director": "Fritz Lang",
         "duration": 153,
-        "country": "de"
+        "country": "de",
+		"imdb-ref": "tt0017136"
     },
     {
         "id": "4",
@@ -40,7 +43,8 @@
         "year": 1933,
         "director": "Ernest B. Schoedsack, Merian C. Cooper",
         "duration": 100,
-        "country": "us"
+        "country": "us",
+		"imdb-ref": "tt0024216"
     },
     {
         "id": "5",
@@ -51,7 +55,8 @@
         "year": 1938,
         "director": "Howard Hawks",
         "duration": 102,
-        "country": "us"
+        "country": "us",
+		"imdb-ref": "tt0029947"
     },
     {
         "id": "6",
