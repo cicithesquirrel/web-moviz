@@ -47,7 +47,7 @@ class StatsContainer extends Component {
         };
 
         return (
-            <div>
+            <div id="StatsContainer">
                 <Breadcrumb crumbs={[{label:'Movies',link:'/'}, {label:'Stats'}]} />
                 <section>
                     <h2>Number of movies by country</h2>
