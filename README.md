@@ -10,6 +10,8 @@ It was bootstrapped with [Create React App](https://github.com/facebookincubator
 
 ![Movie details](/screen2.png)
 
+![Movies stats](/screen3.png)
+
 ## Installation & use
 
 ```
