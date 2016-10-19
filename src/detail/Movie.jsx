@@ -7,7 +7,7 @@ class Movie extends Component {
   
     render() {
         let movie = this.props.movie;
-        let country = <img src={'/flags/' + movie.country + '.png'} alt={movie.country} title={this.props.movie.country}/>;
+        let countryImage = <img src={'/flags/' + movie.country + '.png'} alt={movie.country} title={this.props.movie.country}/>;
         return (
             <div className="Movie">
                 <h2>{movie.title}</h2>
@@ -16,7 +16,7 @@ class Movie extends Component {
                     <h3>Details</h3>
                     <ul>
                         <MovieProperty label="Director(s):" value={movie.director} linkValue={movie.director} />
-                        <MovieProperty label="Country:" value={country} linkValue={movie.country} />
+                        <MovieProperty label="Country:" value={countryImage} linkValue={movie.country} />
                         <MovieProperty label="Year:" value={movie.year} linkValue={movie.year} />
                         <MovieProperty label="Duration:" value={movie.duration} />
                     </ul>
