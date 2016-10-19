@@ -3,7 +3,12 @@
         "id": "1",
         "title": "Gone with the wind",
         "alt-titles": {
-            "fr": "Autant en emporte le vent"
+            "fr": "Autant en emporte le vent",
+			"de": "Vom Winde verweht",
+			"es": "Lo que el viento se llevó",
+			"br": "...E o Vento Levou",
+			"jp": "Kaze to tomo ni sarinu",
+			"ru": "Унесённые ветром"
         },
         "year": 1939,
         "director": "Victor Fleming, George Cukor, Sam Wood",
