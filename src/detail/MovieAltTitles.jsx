@@ -2,7 +2,8 @@ import React from 'react';
 import './MovieAltTitles.css';
 
 const MovieAltTitles = ({titles}) => (
-    <section>
+    <div>
+        <h3>Other titles</h3>
         <ul className="MovieAltTitles">
             {Object.keys(titles).sort().map((key) => (
                 <li>
@@ -11,7 +12,7 @@ const MovieAltTitles = ({titles}) => (
                 </li>
             ))}
         </ul>
-    </section>
+    </div>
 );
 
 export default MovieAltTitles;
