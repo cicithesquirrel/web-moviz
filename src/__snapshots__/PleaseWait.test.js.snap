@@ -1,0 +1,8 @@
+exports[`test PleaseWait 1`] = `
+<div
+  className="Generic-message">
+  <i
+    className="fa fa-spinner fa-pulse fa-fw" />
+    Please wait...
+</div>
+`;

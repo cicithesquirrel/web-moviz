@@ -1,0 +1,52 @@
+exports[`test Breadcrumb is empty 1`] = `
+<ol
+  className="breadcrumb" />
+`;
+
+exports[`test Breadcrumb with label and link 1`] = `
+<ol
+  className="breadcrumb">
+  <li>
+    <a
+      href="link_to_blabla">
+      blabla
+    </a>
+  </li>
+</ol>
+`;
+
+exports[`test Breadcrumb with label only 1`] = `
+<ol
+  className="breadcrumb">
+  <li>
+    <a
+      href="#">
+      blabla
+    </a>
+  </li>
+</ol>
+`;
+
+exports[`test Breadcrumb with several items 1`] = `
+<ol
+  className="breadcrumb">
+  <li>
+    <a
+      href="link_to_blabla">
+      blabla
+    </a>
+  </li>
+  <li>
+    <a
+      href="link_to_blabla1">
+      blabla1
+    </a>
+  </li>
+  <li>
+    <a
+      href="link_to_blabla2">
+      blabla2
+    </a>
+  </li>
+</ol>
+`;
