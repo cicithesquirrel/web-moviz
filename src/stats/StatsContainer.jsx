@@ -22,9 +22,21 @@ class StatsContainer extends Component {
     componentDidMount() {
         let that = this;
         DataProvider.getStats(function(countByCountry) {
+
+            let countries = Object.keys(countByCountry);
+
+            let data = {
+                labels: countries,
+                datasets: [{
+                    data: countries.map((c)=>(countByCountry[c])),
+                    backgroundColor: backgroundColors,
+                    hoverBackgroundColor: hoverBackgroundColors
+                }]
+            };
+
             that.setState({
                 loaded: true,
-                countByCountry: countByCountry
+                countByCountry: data
             });
         });
     }
@@ -35,23 +47,13 @@ class StatsContainer extends Component {
         }
 
         let countByCountry = this.state.countByCountry;
-        let countries = Object.keys(countByCountry);
-
-        let data = {
-            labels: countries,
-            datasets: [{
-                data: countries.map((c)=>(countByCountry[c])),
-                backgroundColor: backgroundColors,
-                hoverBackgroundColor: hoverBackgroundColors
-            }]
-        };
 
         return (
             <div id="StatsContainer">
                 <Breadcrumb crumbs={[{label:'Movies',link:'/'}, {label:'Stats'}]} />
                 <section>
                     <h2>Number of movies by country</h2>
-                    <Doughnut data={data} />
+                    <Doughnut data={countByCountry} />
                 </section>
             </div>
         );
