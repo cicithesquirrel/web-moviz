@@ -37,7 +37,7 @@ class StatsContainer extends Component {
         let that = this;
         DataProvider.getStats(function(countByCountry) {
 
-            let countries = Object.keys(countByCountry);
+            let countries = Object.keys(countByCountry).sort();
 
             let data = {
                 labels: countries,
