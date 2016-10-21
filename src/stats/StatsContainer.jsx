@@ -5,17 +5,31 @@ import PleaseWait from '../PleaseWait';
 import {Doughnut} from 'react-chartjs-2';
 import "./StatsContainer.css";
 
-const backgroundColors = ['#5DA5DA', '#FAA43A', '#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854', '#4D4D4D'];
-const hoverBackgroundColors = backgroundColors;
-
 class StatsContainer extends Component {
 
     constructor(props) {
         super(props);
 
+        const backgroundColors = ['#5DA5DA', '#FAA43A', '#60BD68', '#F17CB0', '#B2912F', '#B276B2', '#DECF3F', '#F15854', '#4D4D4D'];
+
+        const lighthenHexValue = (hexValue) => {
+            const value = parseInt(hexValue, 16) + 16;
+            return (value > 255 ? 255 : value).toString(16);
+        };
+
+        const lighthenHexColor = (hexColor) => {
+            const r = lighthenHexValue(hexColor.substring(1, 3));
+            const g = lighthenHexValue(hexColor.substring(3, 5));
+            const b = lighthenHexValue(hexColor.substring(5, 7));
+            const retval = '#' + r + g + b; 
+            return retval;
+        };
+
         this.state = {
             loaded: false,
-            countByCountry: undefined
+            countByCountry: undefined,
+            backgroundColors: backgroundColors,
+            hoverBackgroundColors: backgroundColors.map((c) => (lighthenHexColor(c)))
         };
     }
 
@@ -29,8 +43,8 @@ class StatsContainer extends Component {
                 labels: countries,
                 datasets: [{
                     data: countries.map((c)=>(countByCountry[c])),
-                    backgroundColor: backgroundColors,
-                    hoverBackgroundColor: hoverBackgroundColors
+                    backgroundColor: that.state.backgroundColors,
+                    hoverBackgroundColor: that.state.hoverBackgroundColors
                 }]
             };
 
