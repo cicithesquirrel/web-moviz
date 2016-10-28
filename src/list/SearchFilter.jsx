@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import "./SearchFilter.css";
 
 class SearchFilter extends Component {
@@ -28,11 +28,12 @@ class SearchFilter extends Component {
     _onClear(e) {
         this._setFilterTextAndTriggerChange('');
     }
-  
+
     render() {
+        var label = (this.props.label ? this.props.label : 'Filter:');
         return (
             <div className="form-group">
-                <label htmlFor={this.props.id}>{(this.props.label?this.props.label:'Filter:')}</label>
+                <label htmlFor={this.props.id}>{label}</label>
                 <div className="input-group">
                     <input ref={(ref) => this.inputText = ref} onChange={this.onChange} type="text" className="form-control" id={this.props.id} placeholder={this.props.placeholder} value={this.state.value} />
                     <span className="input-group-btn">
