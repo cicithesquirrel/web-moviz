@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import DataProvider from '../data/DataProvider';
 import Breadcrumb from '../Breadcrumb';
 import PleaseWait from '../PleaseWait';
-import {Doughnut} from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import "./StatsContainer.css";
 
 class StatsContainer extends Component {
@@ -21,7 +21,7 @@ class StatsContainer extends Component {
             const r = lighthenHexValue(hexColor.substring(1, 3));
             const g = lighthenHexValue(hexColor.substring(3, 5));
             const b = lighthenHexValue(hexColor.substring(5, 7));
-            const retval = '#' + r + g + b; 
+            const retval = '#' + r + g + b;
             return retval;
         };
 
@@ -35,14 +35,14 @@ class StatsContainer extends Component {
 
     componentDidMount() {
         let that = this;
-        DataProvider.getStats(function(countByCountry) {
+        DataProvider.getStats(function (countByCountry) {
 
             let countries = Object.keys(countByCountry).sort();
 
             let data = {
                 labels: countries,
                 datasets: [{
-                    data: countries.map((c)=>(countByCountry[c])),
+                    data: countries.map((c) => (countByCountry[c])),
                     backgroundColor: that.state.backgroundColors,
                     hoverBackgroundColor: that.state.hoverBackgroundColors
                 }]
@@ -54,7 +54,7 @@ class StatsContainer extends Component {
             });
         });
     }
-  
+
     render() {
         if (!this.state.loaded) {
             return <PleaseWait />;
@@ -64,7 +64,7 @@ class StatsContainer extends Component {
 
         return (
             <div id="StatsContainer">
-                <Breadcrumb crumbs={[{label:'Movies',link:'/'}, {label:'Stats'}]} />
+                <Breadcrumb crumbs={[{ label: 'Movies', link: '/' }, { label: 'Stats' }]} />
                 <section>
                     <h2>Number of movies by country</h2>
                     <Doughnut data={countByCountry} />

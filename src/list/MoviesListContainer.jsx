@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MoviesList from './MoviesList';
 import DataProvider from '../data/DataProvider';
 import Breadcrumb from '../Breadcrumb';
@@ -13,7 +13,7 @@ class MoviesListContainer extends Component {
         this.state = {
             loaded: false,
             movies: [],
-            options: {filter: (query.f || ''), sort: (query.s || 'title')}
+            options: { filter: (query.f || ''), sort: (query.s || 'title') }
         };
         this.onFilterChange = this._onFilterChange.bind(this)
         this.onSortChange = this._onSortChange.bind(this)
@@ -22,7 +22,7 @@ class MoviesListContainer extends Component {
     componentDidMount() {
         let options = this.state.options;
         let that = this;
-        DataProvider.getMovies(options, function(movies) {
+        DataProvider.getMovies(options, function (movies) {
             that.setState({
                 loaded: true,
                 options: options,
@@ -36,7 +36,7 @@ class MoviesListContainer extends Component {
         options.filter = filterText;
 
         let that = this;
-        DataProvider.getMovies(options, function(movies) {
+        DataProvider.getMovies(options, function (movies) {
             that.setState({
                 options: options,
                 movies: movies
@@ -49,14 +49,14 @@ class MoviesListContainer extends Component {
         options.sort = sortValue;
 
         let that = this;
-        DataProvider.getMovies(options, function(movies) {
+        DataProvider.getMovies(options, function (movies) {
             that.setState({
                 options: options,
                 movies: movies
             });
         });
     }
-  
+
     render() {
         if (!this.state.loaded) {
             return <PleaseWait />;
@@ -64,13 +64,13 @@ class MoviesListContainer extends Component {
 
         return (
             <div>
-                <Breadcrumb crumbs={[{label:'Movies'}]} />
-                <MoviesList 
+                <Breadcrumb crumbs={[{ label: 'Movies' }]} />
+                <MoviesList
                     movies={this.state.movies}
                     filter={this.state.options.filter}
                     sort={this.state.options.sort}
                     onFilterChange={this.onFilterChange}
-                    onSortChange={this.onSortChange}/>
+                    onSortChange={this.onSortChange} />
             </div>
         );
     }

@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MovieProperty from './MovieProperty';
 import MovieAltTitles from './MovieAltTitles';
 import './Movie.css';
 
 class Movie extends Component {
-  
+
     render() {
         let movie = this.props.movie;
-        let countryImage = <img src={'/flags/' + movie.country + '.png'} alt={movie.country} title={this.props.movie.country}/>;
+        let countryImage = <img src={'/flags/' + movie.country + '.png'} alt={movie.country} title={this.props.movie.country} />;
         return (
             <div className="Movie container-fluid">
                 <h2>{movie.title}&nbsp;
@@ -24,8 +24,8 @@ class Movie extends Component {
                         </ul>
                     </section>
                     {movie['alt-titles'] && <section className="col-xs-12 col-sm-5">
-                            <MovieAltTitles titles={movie['alt-titles']} />
-                        </section>}
+                        <MovieAltTitles titles={movie['alt-titles']} />
+                    </section>}
                 </div>
             </div>);
     }

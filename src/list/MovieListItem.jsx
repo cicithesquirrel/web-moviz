@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './MovieListItem.css';
 
 class MovieListItem extends Component {
-  
+
     render() {
         let url = '/movie/' + this.props.movie.id;
         let countryFlagUrl = '/flags/' + this.props.movie.country + '.png';
@@ -16,7 +16,7 @@ class MovieListItem extends Component {
                     {this.props.movie.director}
                 </p>
                 <p className="list-group-item-text">
-                    <img src={countryFlagUrl} alt={this.props.movie.country} title={this.props.movie.country}/>&nbsp;
+                    <img src={countryFlagUrl} alt={this.props.movie.country} title={this.props.movie.country} />&nbsp;
                     {this.props.movie.year}
                 </p>
             </a>);

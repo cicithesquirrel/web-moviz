@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import DataProvider from '../data/DataProvider';
 import Breadcrumb from '../Breadcrumb';
 import Movie from './Movie';
@@ -17,14 +17,14 @@ class MovieContainer extends Component {
 
     componentDidMount() {
         let that = this;
-        DataProvider.getMovie(this.props.params.id, function(m) {
+        DataProvider.getMovie(this.props.params.id, function (m) {
             that.setState({
                 movie: m,
                 loaded: true
             });
         });
     }
-  
+
     render() {
         if (!this.state.loaded) {
             return <PleaseWait />;
@@ -32,15 +32,15 @@ class MovieContainer extends Component {
 
         if (!this.state.movie) {
             return (<div className="Generic-message">
-                    <i className="fa fa-frown-o"></i>&nbsp;
+                <i className="fa fa-frown-o"></i>&nbsp;
                     Oops! Sorry, we could not find this movie...
                     <p className="Generic-mini-message">Please try again by clicking <a href="/">here</a>!</p>
-                </div>);
+            </div>);
         }
 
         return (
             <div>
-                <Breadcrumb crumbs={[{label:'Movies',link:'/'}, {label:this.state.movie.title}]} />
+                <Breadcrumb crumbs={[{ label: 'Movies', link: '/' }, { label: this.state.movie.title }]} />
                 <Movie movie={this.state.movie} />
             </div>
         );
